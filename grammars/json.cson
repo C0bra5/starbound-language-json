@@ -29,9 +29,11 @@
   'itemdescription'
   'tooltip'
   'codex'
-  'cinematic',
-  'weaponability',
+  'cinematic'
+  'weaponability'
   'stagehand'
+  'liquid'
+  'liqitem'
 ]
 'name': 'JSON Starbound'
 'patterns': [

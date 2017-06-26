@@ -1,5 +1,5 @@
 'fileTypes': [
-'achievement'
+  'achievement'
   'event'
   'aimission'
   'config'

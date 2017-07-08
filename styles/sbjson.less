@@ -1,0 +1,17 @@
+@import "syntax-variables";
+span.syntax--meta.syntax--structure.syntax--dictionary:not(.syntax--value) >
+span.syntax--string,
+span.syntax--meta.syntax--structure.syntax--dictionary:not(.syntax--value) >
+span.syntax--string > span.syntax--punctuation.syntax--string.syntax--begin,
+span.syntax--meta.syntax--structure.syntax--dictionary:not(.syntax--value) >
+span.syntax--string > span.syntax--punctuation.syntax--string.syntax--end{
+	color: @syntax-color-keyword;
+}
+span.syntax--meta.syntax--structure.syntax--dictionary.syntax--value >
+span.syntax--string,
+span.syntax--meta.syntax--structure.syntax--dictionary.syntax--value >
+span.syntax--string > span.syntax--punctuation.syntax--string.syntax--begin,
+span.syntax--meta.syntax--structure.syntax--dictionary.syntax--value >
+span.syntax--string > span.syntax--punctuation.syntax--string.syntax--end{
+	color: @syntax-color-value;
+}

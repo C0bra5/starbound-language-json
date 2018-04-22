@@ -1,6 +1,6 @@
 {
   "name": "starbound-language-json",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Json color highlight for Atom, slightly modified to help with starbound modding",
   "license": "MIT",
   "repository": "https://github.com/C0bra5/starbound-language-json",

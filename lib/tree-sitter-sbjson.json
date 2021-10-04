@@ -1,0 +1,61 @@
+{
+	"type" : "tree-sitter",
+	"parser" : "tree-sitter-sbjson",
+
+	"folds" : [
+		{
+			"start" : {
+				"index" : 0,
+				"type" : "{"
+			},
+			"end" : {
+				"index" : -1,
+				"type" : "}"
+			}
+		},
+		{
+			"start" : {
+				"index" : 0,
+				"type" : "["
+			},
+			"end" : {
+				"index" : -1,
+				"type" : "]"
+			}
+		}
+	],
+
+	"scopes" : {
+		
+		"object" : "meta.structure.dictionary.sbjson",
+		"key" : "dictionary.key.sbjson",
+		
+		"array" : "meta.structure.array",
+		
+		"single_line_comment" : "comment.single.sbjson",
+		"multi_line_comment" : "comment.block.sbjson",
+		
+		"escape_sequence" : "constant.character.escape",
+		"text_format_indicator" : "constant.character.escape",
+
+		"string" : "string.quoted.double",
+		"number" : "constant.numeric",
+		"true" : "constant.language",
+		"false" : "constant.language",
+		"null" : "constant.language",
+
+		"\"{\"" : "punctuation.definition.dictionary.begin",
+		"\"}\"" : "punctuation.definition.dictionary.end",
+		"\":\"" : "punctuation.separator.dictionary.key-value",
+		"object > \",\"" : "punctuation.separator.dictionary.pair",
+		"array > \",\"" : "punctuation.separator.array",
+		"\"[\"" : "punctuation.definition.array.begin",
+		"\"]\"" : "punctuation.definition.array.end",
+		"\"\\\"\"" : "punctuation.definition.string.sbjson",
+		
+		"ERROR" : "invalid.illegal",
+		"bad_escape_sequence" : "invalid.illegal.unrecognized-string-escape",
+		"object_comma_missing" : "invalid.illegal.expected-separator",
+		"array_comma_missing" : "invalid.illegal.expeced-dictionary-separator"
+	}
+}

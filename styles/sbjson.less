@@ -1,17 +1,17 @@
 @import "syntax-variables";
-span.syntax--meta.syntax--structure.syntax--dictionary:not(.syntax--value) >
-span.syntax--string,
-span.syntax--meta.syntax--structure.syntax--dictionary:not(.syntax--value) >
-span.syntax--string > span.syntax--punctuation.syntax--string.syntax--begin,
-span.syntax--meta.syntax--structure.syntax--dictionary:not(.syntax--value) >
-span.syntax--string > span.syntax--punctuation.syntax--string.syntax--end{
-	color: @syntax-color-keyword;
-}
-span.syntax--meta.syntax--structure.syntax--dictionary.syntax--value >
-span.syntax--string,
-span.syntax--meta.syntax--structure.syntax--dictionary.syntax--value >
-span.syntax--string > span.syntax--punctuation.syntax--string.syntax--begin,
-span.syntax--meta.syntax--structure.syntax--dictionary.syntax--value >
-span.syntax--string > span.syntax--punctuation.syntax--string.syntax--end{
-	color: @syntax-color-value;
+//syntax--dictionary syntax--key syntax--json
+span.syntax--sbjson {
+	span.syntax--string {
+		span.syntax--escape {
+			color: @syntax-color-constant
+		}
+		span.syntax--punctuation {
+			filter: brightness(0.8);
+		}
+	}
+	span.syntax--dictionary.syntax--key {
+		span.syntax--string {
+			color: @syntax-color-keyword
+		}
+	}
 }

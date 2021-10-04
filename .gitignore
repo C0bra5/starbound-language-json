@@ -45,3 +45,16 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Node stuff
+*.log
+node_modules
+build
+target
+package-lock.json
+Cargo.lock
+local_modules/tree-sitter-sbjson/node_modules
+local_modules/tree-sitter-sbjson/build
+local_modules/tree-sitter-sbjson/target
+local_modules/tree-sitter-sbjson/package-lock.json
+local_modules/tree-sitter-sbjson/Cargo.lock

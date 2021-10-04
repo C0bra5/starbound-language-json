@@ -1,0 +1,24 @@
+{
+	"replaceNormalJson" : {
+		"title" : "Replace normal json highlighting",
+		"description" : "Turn this on if you want to replace atom's default highlighting with the one provided by this package.",
+		"type" : "boolean",
+		"default" : false,
+		"order" : 1
+	},
+	"customTypes" : {
+		"title" : "Custom extensions",
+		"description" : "If you wish to allow the package to highlight more file types, write them here using comma separated values. (eg: `ext1,ext2,ext3`)",
+		"type" : "string",
+		"default" : "",
+		"order" : 1
+	},
+	"defaultTypes" : {
+		"title" : "Default extensions:",
+		"description" : "The list of default file extentions that are highlighted by this package.",
+		"type" : "object",
+		"order" : 2,
+		"properties" : {
+		}
+	}
+}

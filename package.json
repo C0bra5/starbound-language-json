@@ -5,7 +5,12 @@
   "license": "MIT",
   "repository": "https://github.com/C0bra5/starbound-language-json",
   "dependencies": {
-    "tree-sitter-sbjson": "./local_modules/tree-sitter-sbjson"
+		"nan": "^2.0.0"
+  },
+  "scripts": {
+    "build": "tree-sitter generate && node-gyp build",
+    "install": "node-gyp rebuild",
+    "test": "tree-sitter test"
   },
   "devDependencies": {},
   "optionalDependencies": {},

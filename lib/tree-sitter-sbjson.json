@@ -1,6 +1,6 @@
 {
 	"type" : "tree-sitter",
-	"parser" : "../build/Release/tree_sitter_sbjson_binding",
+	"parser" : "./tree-sitter-sbjson.js",
 
 	"folds" : [
 		{
